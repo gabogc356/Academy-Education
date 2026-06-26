@@ -1,0 +1,123 @@
+.history-module {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.category-filter {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.category-filter button {
+  padding: 0.5rem 1rem;
+  border: 2px solid #d1d5db;
+  background: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.category-filter button.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: transparent;
+}
+
+.events-timeline {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.events-timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+  display: flex;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.timeline-item:hover {
+  transform: translateX(10px);
+}
+
+.timeline-dot {
+  position: relative;
+  left: 8px;
+  width: 24px;
+  height: 24px;
+  background: white;
+  border: 3px solid #667eea;
+  border-radius: 50%;
+  flex-shrink: 0;
+  top: 5px;
+}
+
+.timeline-content {
+  margin-left: 1.5rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+}
+
+.timeline-content h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.date {
+  color: #667eea;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.category-badge {
+  display: inline-block;
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin: 0.5rem 0 0 0;
+}
+
+.event-detail {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background: #e5e7eb;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.date-detail {
+  color: #667eea;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  line-height: 1.8;
+  color: #4b5563;
+}
